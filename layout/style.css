@@ -1,0 +1,43 @@
+body {
+  height: 97vh;
+}
+
+.container {
+  margin: auto;
+  background-image: url(../assets/images/lfz-background.jpg);
+}
+
+.row {
+  /* background-color: #FFEBCD; */
+}
+
+.header-row {
+  height: 20%;
+  margin-bottom: .5rem;
+}
+
+header {
+  margin: auto;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+header p {
+  margin: 0;
+}
+
+aside div {
+  background-color: lightskyblue;
+}
+
+aside p {
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+}
+
+main div {
+  margin: .2rem;
+  /* background-color: black; */
+  background-image: url(../assets/images/lfz-card.jpg);
+}
