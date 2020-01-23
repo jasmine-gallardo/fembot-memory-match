@@ -36,11 +36,56 @@ aside p {
   margin: auto;
 }
 
+.card {
+  position: relative;
+  margin: .5rem auto;
+}
+
 /* col-2 */
 main div {
   height: 50%;
   background-image: url(../assets/images/lfz-card.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  margin: auto;
+}
+
+.card-front, .card-back {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.css-logo {
+  background-image: url(../assets/images/css-logo.png);
+}
+.docker-logo {
+  background-image: url(../assets/images/docker-logo.jpg);
+}
+.gitHub-logo {
+  background-image: url(../assets/images/gitHub-logo.png);
+}
+.html-logo {
+  background-image: url(../assets/images/html-logo.png);
+}
+.js-logo {
+  background-image: url(../assets/images/js-logo.png);
+}
+.mysql-logo {
+  background-image: url(../assets/images/mysql-logo.jpg);
+}
+.node-logo {
+  background-image: url(../assets/images/node-logo.png);
+}
+.php-logo {
+  background-image: url(../assets/images/php-logo.jpeg);
+}
+.react-logo {
+  background-image: url(../assets/images/react-logo.png);
+}
+
+.hidden {
+  display: none;
 }
