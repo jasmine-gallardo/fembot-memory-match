@@ -63,5 +63,29 @@ function displayStats() {
 }
 
 function calculateAccuracy(matches, attempts) {
+  if (!attempts){
+    return "0%";
+  }
   return (Math.trunc((matches / attempts) * 100)) + "%";
 }
+
+function resetGame() {
+  matches = 0;
+  attempts = 0;
+  gamesPlayed++;
+
+  resetCards();
+  displayStats();
+  document.getElementsByClassName("modal-overlay")[0].classList.add("hidden");
+}
+
+function resetCards() {
+  var hiddenCards = document.querySelectorAll(".card-back");
+
+  for (var listItem = 0; listItem < hiddenCards.length; listItem++) {
+    // listItem.classList.remove("hidden"); - why didnt work?
+    hiddenCards[listItem].classList.remove("hidden");
+  }
+}
+
+document.getElementById("modalButton").addEventListener("click", resetGame);

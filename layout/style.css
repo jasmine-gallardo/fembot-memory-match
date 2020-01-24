@@ -99,13 +99,18 @@ main div {
 
 .modal-content {
   background-color: cornflowerblue;
-  width: 30%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 40%;
+  height: 30%;
   text-align: center;
   font-size: 2rem;
+}
+
+button {
+  height: 15%;
+  width: 50%;
+  background-color:lightskyblue;
+  font-size: 1rem;
+  border: none;
 }
 
 .hidden {
