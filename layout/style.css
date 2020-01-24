@@ -28,6 +28,7 @@ header p {
 
 aside div {
   background-color: lightskyblue;
+  display: flex;
 }
 
 aside p {
