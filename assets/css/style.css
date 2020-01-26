@@ -1,6 +1,7 @@
 body {
-  height: 97vh;
-  background-image: url(../images/lfz-background.jpg);
+  height: 100vh;
+  /* background-color: #24272b; */
+  background-image: url(../images/white-angles-2.png);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,12 +15,26 @@ body {
 
 header {
   margin: auto;
-  font-size: 4rem;
+}
+
+header h1 {
+  margin: 0;
+  color: #FAFAFA;
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 3rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  /* background-color: #FFF0AF; */
 }
 
 header p {
-  margin: 0;
+  color: #FAFAFA;
+  font-family: "Biryani", sans-serif;
+  font-size: 1rem;
+  margin-top: 2%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .row2 {
@@ -27,14 +42,17 @@ header p {
 }
 
 aside div {
-  background-color: lightskyblue;
+  background-color: #FAFAFA;
   display: flex;
+  border-radius: 15px;
 }
 
 aside p {
   text-align: center;
+  text-transform: uppercase;
   font-size: 20px;
   margin: auto;
+  font-family: "Assistant", sans-serif;
 }
 
 .card {
@@ -44,10 +62,12 @@ aside p {
 
 /* col-2 */
 main div {
-  height: 50%;
-  background-image: url(../images/lfz-card.jpg);
+  height: 60%;
+  background-image: url(../images/silhouette.png);
   background-size: 100%;
   background-repeat: no-repeat;
+  border-radius: 15px;
+  /* border: 1px solid #FAFAFA; */
 }
 
 .card-front, .card-back {
@@ -59,32 +79,32 @@ main div {
     position: absolute;
 }
 
-.css-logo {
-  background-image: url(../images/css-logo.png)
+.dolores {
+  background-image: url(../images/westworld-dolores.jpg)
 }
-.docker-logo {
-  background-image: url(../images/docker-logo.jpg);
+.dot-matrix {
+  background-image: url(../images/spaceballs-dot-matrix.jpg);
 }
-.gitHub-logo {
-  background-image: url(../images/gitHub-logo.png);
+.eve {
+  background-image: url(../images/wall-e-eve.jpg);
 }
-.html-logo {
-  background-image: url(../images/html-logo.png);
+.ava {
+  background-image: url(../images/ex-machina-ava.jpg);
 }
-.js-logo {
-  background-image: url(../images/js-logo.png);
+.caprica-six {
+  background-image: url(../images/battlestar-galactica-six.png);
 }
-.mysql-logo {
-  background-image: url(../images/mysql-logo.jpg);
+.galatea {
+  background-image: url(../images/galatea-bicentennial-man.jpg);
 }
-.node-logo {
-  background-image: url(../images/node-logo.png);
+.fembot {
+  background-image: url(../images/austin-powers-fembot-2.jpg);
 }
-.php-logo {
-  background-image: url(../images/php-logo.jpeg);
+.maria {
+  background-image: url(../images/metropolis-m.jpeg);
 }
-.react-logo {
-  background-image: url(../images/react-logo.png);
+.rachael {
+  background-image: url(../images/blade-runner-rachael.jpg);
 }
 
 .modal-overlay {
