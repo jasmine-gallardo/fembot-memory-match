@@ -1,6 +1,5 @@
 body {
   height: 100vh;
-  /* background-color: #24272b; */
   background-image: url(../images/white-angles-2.png);
   background-size: 100%;
   background-position: center;
@@ -25,7 +24,6 @@ header h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  /* background-color: #FFF0AF; */
 }
 
 header p {
@@ -63,10 +61,10 @@ aside p {
 /* col-2 */
 main div {
   height: 60%;
-  background-image: url(../images/silhouette.png);
+  background-image: url(../images/robot-card-back.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   /* border: 1px solid #FAFAFA; */
 }
 
@@ -100,8 +98,8 @@ main div {
 .fembot {
   background-image: url(../images/austin-powers-fembot-2.jpg);
 }
-.maria {
-  background-image: url(../images/metropolis-m.jpeg);
+.maeve {
+  background-image: url(../images/westworld-maeve.jpg);
 }
 .rachael {
   background-image: url(../images/blade-runner-rachael.jpg);
@@ -115,22 +113,52 @@ main div {
   height: 100vh;
   width: 100%;
   z-index: 1;
+  background-color: rgba(0,0,0, 0.32);
 }
 
 .modal-content {
-  background-color: cornflowerblue;
+  background-color: #FAFAFA;
   width: 40%;
-  height: 30%;
+  height: 40%;
+  display: flex;
+  font-family: "Biryani", sans-serif;
+}
+
+.modal-image {
+  height: 98%;
+  width: 50%;
+  margin: .2rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/ex-machina-ava.jpg);
+}
+
+.modal-text {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.modal-text p {
+  margin: 0;
+  display: block;
   text-align: center;
-  font-size: 2rem;
+  width: 100%
 }
 
 button {
-  height: 15%;
-  width: 50%;
-  background-color:lightskyblue;
+  margin: 2rem auto;
+  width: 70%;
+  padding: 10px;
+  color: white;
+  background-color:rgba(207, 4, 4, 0.952);
   font-size: 1rem;
+  font-weight: 700;
   border: none;
+  border-radius: 10px;
 }
 
 .hidden {

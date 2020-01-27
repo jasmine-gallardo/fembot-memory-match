@@ -12,6 +12,9 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 
+var cardFrontClass = document.querySelectorAll(".card-front");
+var cardArray = Array.prototype.slice.call(cardFrontClass);
+
 function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
     return;
@@ -77,15 +80,25 @@ function resetGame() {
   resetCards();
   displayStats();
   document.getElementsByClassName("modal-overlay")[0].classList.add("hidden");
+  shuffleCards(cardArray);
 }
 
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back");
 
   for (var listItem = 0; listItem < hiddenCards.length; listItem++) {
-    // listItem.classList.remove("hidden"); - why didnt work?
     hiddenCards[listItem].classList.remove("hidden");
   }
 }
 
 document.getElementById("modalButton").addEventListener("click", resetGame);
+
+
+function shuffleCards(array) {
+  for (var i = 0; i < array.length; i++) {
+    var randomPosition = Math.floor(Math.random() * array.length);
+    var placeHolder = array[i];
+    array[i] = array[randomPosition];
+    array[randomPosition] = placeHolder;
+  }
+}
