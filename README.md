@@ -21,4 +21,4 @@ A female robot-themed card match game built using HTML, CSS, and JavaScript.
 - User Can Reset Game and Play Again
 
 ## Preview
-! [FemBot Memory Match Preview](https://github.com/jasmine-gallardo/fembot-memory-match/blob/master/assets/images/live-demo-fembot-memory-match.gif "FemBot Memory Match Preview")
+![FemBot Memory Match Preview](assets/images/live-demo-fembot-memory-match.gif "FemBot Memory Match Preview")
