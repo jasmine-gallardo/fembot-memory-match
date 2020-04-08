@@ -22,3 +22,22 @@ A female robot-themed card match game built using HTML, CSS, and JavaScript.
 
 ## Preview
 ![FemBot Memory Match Preview](assets/images/live-demo-fembot-memory-match.gif "FemBot Memory Match Preview")
+
+## Development
+
+#### System Requirements
+- None
+
+#### Getting Started
+
+Clone this repository.
+``` shell
+git clone https://github.com/jasmine-gallardo/fembot-memory-match.git
+```
+
+Change directory into folder.
+```shell
+cd fembot-memory-match
+```
+
+Open `index.html` in the browser from your code editor.
