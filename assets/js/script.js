@@ -93,7 +93,6 @@ function resetCards() {
 
 document.getElementById("modalButton").addEventListener("click", resetGame);
 
-
 function shuffleCards(array) {
   for (var i = 0; i < array.length; i++) {
     var randomPosition = Math.floor(Math.random() * array.length);
