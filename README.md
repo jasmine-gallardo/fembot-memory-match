@@ -37,7 +37,7 @@ git clone https://github.com/jasmine-gallardo/fembot-memory-match.git
 
 Change directory into folder.
 ```shell
-cd fembot-memory-match
+cd fembot-memory-match/
 ```
 
 Open `index.html` in the browser from your code editor.
