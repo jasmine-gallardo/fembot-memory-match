@@ -27,7 +27,6 @@
   flex-basis: 100%;
 }
 
-/* col-2 */
 aside {
   margin: 1rem;
   margin-top: 0;
@@ -41,7 +40,6 @@ aside div {
   display: flex;
 }
 
-/* col-10 */
 main {
   display: flex;
   flex-wrap: wrap;
