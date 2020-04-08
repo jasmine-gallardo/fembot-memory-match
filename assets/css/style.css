@@ -6,7 +6,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* row */
 .header-row {
   height: 20%;
   margin-bottom: .5rem;
@@ -58,14 +57,11 @@ aside p {
   margin: .5rem auto;
 }
 
-/* col-2 */
 main div {
   height: 60%;
   background-image: url(../images/robot-card-back.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  /* border-radius: 15px; */
-  /* border: 1px solid #FAFAFA; */
 }
 
 .card-front, .card-back {
