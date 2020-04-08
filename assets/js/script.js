@@ -19,7 +19,7 @@ function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
     return;
   }
-  event.target.className += " hidden";
+  event.target.className += "hidden";
 
   if (!firstCardClicked) {
     firstCardClicked = event.target;
@@ -92,12 +92,3 @@ function resetCards() {
 }
 
 document.getElementById("modalButton").addEventListener("click", resetGame);
-
-function shuffleCards(array) {
-  for (var i = 0; i < array.length; i++) {
-    var randomPosition = Math.floor(Math.random() * array.length);
-    var placeHolder = array[i];
-    array[i] = array[randomPosition];
-    array[randomPosition] = placeHolder;
-  }
-}
