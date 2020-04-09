@@ -19,7 +19,7 @@ function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
     return;
   }
-  event.target.className += "hidden";
+  event.target.className += " hidden";
 
   if (!firstCardClicked) {
     firstCardClicked = event.target;
