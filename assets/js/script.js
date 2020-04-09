@@ -80,7 +80,6 @@ function resetGame() {
   resetCards();
   displayStats();
   document.getElementsByClassName("modal-overlay")[0].classList.add("hidden");
-  shuffleCards(cardArray);
 }
 
 function resetCards() {
