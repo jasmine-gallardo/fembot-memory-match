@@ -81,3 +81,42 @@ main {
 .col-12 {
   width: 96%;
 }
+
+@media screen and (max-width: 710px) {
+  header {
+    margin: .5rem auto 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .row2 {
+    display: unset;
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  aside {
+    height: 10%;
+    margin: auto;
+    padding: 0 .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  aside div {
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin: .2rem;
+    padding: .2rem 1rem;
+  }
+  main {
+    height: 80%;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  main div {
+    height: 25%;
+  }
+}
