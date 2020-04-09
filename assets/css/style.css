@@ -47,6 +47,10 @@ aside p {
   margin: .2rem auto;
 }
 
+.card:hover {
+  box-shadow: -1px -1px 5px 10px white;
+}
+
 main div {
   height: 30%;
   background-image: url(../images/robot-card-back.png);
