@@ -47,8 +47,9 @@ aside p {
   margin: .2rem auto;
 }
 
-.card:hover {
+.card-back:hover {
   box-shadow: -1px -1px 5px 10px white;
+  cursor: pointer;
 }
 
 main div {
@@ -155,6 +156,7 @@ button {
 
 button:hover {
   box-shadow: -1px -1px 15px 2px red;
+  cursor: pointer;
 }
 
 .hidden {
