@@ -12,8 +12,8 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 
-var cardFrontClassArray = document.querySelectorAll(".card-front");
-var cardArray = Array.prototype.slice.call(cardFrontClassArray);
+var cardFrontClassNodeList = document.querySelectorAll(".card-front");
+var cardArray = Array.prototype.slice.call(cardFrontClassNodeList);
 
 function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
