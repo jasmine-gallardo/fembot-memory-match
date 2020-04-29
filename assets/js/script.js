@@ -12,6 +12,9 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 
+var cardFrontClassNodeList = document.querySelectorAll(".card-front");
+var cardArray = Array.prototype.slice.call(cardFrontClassNodeList);
+
 function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
     return;
@@ -83,7 +86,6 @@ function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back");
 
   for (var listItem = 0; listItem < hiddenCards.length; listItem++) {
-    // listItem.classList.remove("hidden"); - why didnt work?
     hiddenCards[listItem].classList.remove("hidden");
   }
 }

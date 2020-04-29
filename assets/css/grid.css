@@ -7,45 +7,42 @@
   flex-wrap: wrap;
 }
 
-.row {
+.row1 {
   width: 100%;
+  height: 15%;
   display: flex;
-  margin-bottom: .5rem;
+  margin: 1rem auto 0;
   flex-wrap: wrap;
-}
-
-.header-row {
-  width: 100%;
-  height: 20%;
-  margin-bottom: .5rem;
-  flex-basis: 100%;
 }
 
 .row2 {
   width: 100%;
-  height: 100%;
-  flex-basis: 100%;
+  height: 74%;
+  display: flex;
+  margin: 0 3rem;
 }
 
-/* col-2 */
 aside {
-  margin: 1rem;
+  margin: 0;
   margin-top: 0;
   height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 aside div {
-  width: 100%;
+  width: 80%;
   height: 12%;
-  margin: .5rem;
+  margin: auto;
   display: flex;
 }
 
-/* col-10 */
 main {
   display: flex;
   flex-wrap: wrap;
-  height: 40%;
+  height: 100%;
+  margin: 0 1rem;
 }
 
 .col-1 {
@@ -83,4 +80,43 @@ main {
 }
 .col-12 {
   width: 96%;
+}
+
+@media screen and (max-width: 710px) {
+  header {
+    margin: .5rem auto 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .row2 {
+    display: unset;
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  aside {
+    height: 10%;
+    margin: auto;
+    padding: 0 .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  aside div {
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    margin: .2rem;
+    padding: .2rem 1rem;
+  }
+  main {
+    height: 80%;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  main div {
+    height: 25%;
+  }
 }
