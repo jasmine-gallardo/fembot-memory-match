@@ -90,4 +90,13 @@ function resetCards() {
   }
 }
 
+function shuffleCards(array) {
+  for (var i = 0; i < array.length; i++) {
+    var randomPosition = Math.floor(Math.random() * array.length);
+    var placeHolder = array[i];
+    array[i] = array[randomPosition];
+    array[randomPosition] = placeHolder;
+  }
+}
+
 document.getElementById("modalButton").addEventListener("click", resetGame);
