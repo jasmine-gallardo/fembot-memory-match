@@ -92,7 +92,7 @@ function resetCards() {
 }
 
 function shuffleCards(cardArray) {
-  for (var i = 0; i < array.length; i++) {
+  for (var i = 0; i < cardArray.length; i++) {
     var randomPosition = Math.floor(Math.random() * cardArray.length);
     var placeHolder = cardArray[i];
     cardArray[i] = cardArray[randomPosition];
