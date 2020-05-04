@@ -91,12 +91,12 @@ function resetCards() {
   }
 }
 
-function shuffleCards(array) {
+function shuffleCards(cardArray) {
   for (var i = 0; i < array.length; i++) {
-    var randomPosition = Math.floor(Math.random() * array.length);
-    var placeHolder = array[i];
-    array[i] = array[randomPosition];
-    array[randomPosition] = placeHolder;
+    var randomPosition = Math.floor(Math.random() * cardArray.length);
+    var placeHolder = cardArray[i];
+    cardArray[i] = cardArray[randomPosition];
+    cardArray[randomPosition] = placeHolder;
   }
 }
 
