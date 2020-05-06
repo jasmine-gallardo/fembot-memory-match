@@ -12,8 +12,7 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 
-var cardFrontClassNodeList = document.querySelectorAll(".card-front");
-var cardArray = Array.prototype.slice.call(cardFrontClassNodeList);
+var cardArray = ["dolores", "dot-matrix", "eve", "ava", "caprica-six", "galatea", "fembot", "maeve", "rachael", "dolores", "dot-matrix", "eve", "ava", "caprica-six", "galatea", "fembot", "maeve", "rachael"];
 
 function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
@@ -28,7 +27,6 @@ function handleClick(event) {
     secondCardClicked = event.target;
     secondCardClasses = secondCardClicked.previousElementSibling.className;
     mainElement.removeEventListener("click", handleClick);
-
 
     if (firstCardClasses === secondCardClasses) {
       matches++;
@@ -79,6 +77,9 @@ function resetGame() {
 
   resetCards();
   displayStats();
+  destroyChildren();
+  shuffleCards();
+  newCards();
   document.getElementsByClassName("modal-overlay")[0].classList.add("hidden");
 }
 
@@ -90,13 +91,42 @@ function resetCards() {
   }
 }
 
-function shuffleCards(array) {
-  for (var i = 0; i < array.length; i++) {
-    var randomPosition = Math.floor(Math.random() * array.length);
-    var placeHolder = array[i];
-    array[i] = array[randomPosition];
-    array[randomPosition] = placeHolder;
+function shuffleCards() {
+  for (var i = 0; i < cardArray.length; i++) {
+    var randomPosition = Math.floor(Math.random() * cardArray.length);
+    var placeHolder = cardArray[i];
+    cardArray[i] = cardArray[randomPosition];
+    cardArray[randomPosition] = placeHolder;
   }
+}
+
+function newCards() {
+  for (var i = 0; i < cardArray.length; i++) {
+    var cardDiv = document.createElement("div");
+    cardDiv.classList.add("col-2", "card");
+    var cardFront = document.createElement("div");
+    cardFront.classList.add("card-front")
+    cardFront.classList.add(cardArray[i]);
+    var cardBack = document.createElement("div");
+    cardBack.classList.add("card-back");
+
+    cardDiv.appendChild(cardFront);
+    cardDiv.appendChild(cardBack);
+    mainElement.appendChild(cardDiv);
+  }
+}
+
+function destroyChildren() {
+  while (mainElement.firstChild) {
+    mainElement.removeChild(mainElement.firstChild);
+  }
+}
+
+mainElement.onload = loadGame();
+function loadGame() {
+  destroyChildren();
+  shuffleCards();
+  newCards();
 }
 
 document.getElementById("modalButton").addEventListener("click", resetGame);
