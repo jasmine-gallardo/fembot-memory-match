@@ -81,7 +81,9 @@ function resetGame() {
 
   resetCards();
   displayStats();
+  destroyChildren();
   shuffleCards();
+  newCards();
   document.getElementsByClassName("modal-overlay")[0].classList.add("hidden");
 }
 
@@ -93,7 +95,7 @@ function resetCards() {
   }
 }
 
-function shuffleCards(cardArray) {
+function shuffleCards() {
   for (var i = 0; i < cardArray.length; i++) {
     var randomPosition = Math.floor(Math.random() * cardArray.length);
     var placeHolder = cardArray[i];
