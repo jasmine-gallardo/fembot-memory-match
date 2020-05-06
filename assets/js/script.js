@@ -104,4 +104,20 @@ function shuffleCards() {
   }
 }
 
+function newCards() {
+  for (var i = 0; i < cardArray.length; i++) {
+    var cardDiv = document.createElement("div");
+    cardDiv.classList.add("col-2", "card");
+    var cardFront = document.createElement("div");
+    cardFront.classList.add("card-front")
+    cardFront.classList.add(cardArray[i]);
+    var cardBack = document.createElement("div");
+    cardBack.classList.add("card-back");
+
+    cardDiv.appendChild(cardFront);
+    cardDiv.appendChild(cardBack);
+    mainElement.appendChild(cardDiv);
+  }
+}
+
 document.getElementById("modalButton").addEventListener("click", resetGame);
