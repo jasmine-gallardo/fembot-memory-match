@@ -126,4 +126,11 @@ function destroyChildren() {
   }
 }
 
+mainElement.onload = loadGame();
+function loadGame() {
+  destroyChildren();
+  shuffleCards();
+  newCards();
+}
+
 document.getElementById("modalButton").addEventListener("click", resetGame);
