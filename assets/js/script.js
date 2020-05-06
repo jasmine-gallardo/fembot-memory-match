@@ -120,4 +120,10 @@ function newCards() {
   }
 }
 
+function destroyChildren() {
+  while (mainElement.firstChild) {
+    mainElement.removeChild(mainElement.firstChild);
+  }
+}
+
 document.getElementById("modalButton").addEventListener("click", resetGame);
