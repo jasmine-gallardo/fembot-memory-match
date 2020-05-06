@@ -12,9 +12,6 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 
-// var cardFrontClassNodeList = document.querySelectorAll(".card-front");
-// var cardArray = Array.prototype.slice.call(cardFrontClassNodeList);
-
 var cardArray = ["dolores", "dot-matrix", "eve", "ava", "caprica-six", "galatea", "fembot", "maeve", "rachael", "dolores", "dot-matrix", "eve", "ava", "caprica-six", "galatea", "fembot", "maeve", "rachael"];
 
 function handleClick(event) {
@@ -30,7 +27,6 @@ function handleClick(event) {
     secondCardClicked = event.target;
     secondCardClasses = secondCardClicked.previousElementSibling.className;
     mainElement.removeEventListener("click", handleClick);
-
 
     if (firstCardClasses === secondCardClasses) {
       matches++;
