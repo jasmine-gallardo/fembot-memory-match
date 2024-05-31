@@ -9,7 +9,7 @@ A female robot-themed card match game built using HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-[FemBot Memory Match](https://memory-match.jasminegallardo.com/ "FemBot Memory Match")
+[FemBot Memory Match](https://jasmine-gallardo.github.io/fembot-memory-match/ "FemBot Memory Match")
 
 ## Features
 
